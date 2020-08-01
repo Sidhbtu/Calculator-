@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+  </head>
+  <body>
+   
+    <div class="container">
+      
+        <div class="row" >
+            <div class=" col-md-4 offset-md-4  col-sm-10 offset-sm-2 annim" id="annim" >
+                <div class="mt-4" >
+                  <button type="button" value="" class="btn btn-outline-primary" id="hide">See here</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 offset-md-4  col-sm-10 offset-sm-2  " id="cal">
+            <div class="border border-dark">
+              
+              <div class="table table-responsive">
+              <table class="table  table-secondary">
+                <tr>
+                  
+                  <form>
+                    <div class="form-group">
+                      <input readonly class="form-control" value="" id="textarea" type="text" placeholder="My Calci">
+                      <!-- <textarea  class="form-control" id="textarea"></textarea> -->
+                    </div>
+                  </form>
+                  
+                </tr>
+               
+                <tr>
+                  <td>
+                    <button type="button" value="(" class="btn btn-outline-primary btn-block" onclick="exp('(')">(</button>
+                  </td>
+                  <td>
+                    <button type="button" value=")"  class="btn btn-outline-primary btn-block" onclick="exp(')')">)</button>
+                  </td>
+                  <td>
+                    <button type="button" value="C" class="btn btn-danger btn-block" onclick="clean()">AC</button>
+                  </td>
+                  <td>
+                    <button type="button"  value="/" class="btn btn-outline-danger btn-block" onclick="exp('/')">/</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" value="7"  class="btn btn-outline-info btn-block" onclick="exp('7')">7</button>
+                  </td>
+                  <td>
+                    <button type="button" value="8" class="btn btn-outline-info btn-block" onclick="exp('8')">8</button>
+                  </td>
+                  <td>
+                    <button type="button" value="9" class="btn btn-outline-info btn-block" onclick="exp('9')">9</button>
+                  </td>
+                  <td>
+                    <button type="button" value="*" class="btn btn-outline-danger btn-block" onclick="exp('*')">*</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" value="4" class="btn btn-outline-info btn-block" onclick="exp('4')">4</button>
+                  </td>
+                  <td>
+                    <button type="button" value="5" class="btn btn-outline-info btn-block" onclick="exp('5')">5</button>
+                  </td>
+                  <td>
+                    <button type="button" value="6" class="btn btn-outline-info btn-block" onclick="exp('6')">6</button>
+                  </td>
+                  <td>
+                    <button type="button" value="-" class="btn btn-outline-danger btn-block" onclick="exp('-')">-</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" value="1" class="btn btn-outline-info btn-block" onclick="exp('1')">1</button>
+                  </td>
+                  <td>
+                    <button type="button" value="2" class="btn btn-outline-info btn-block" onclick="exp('2')">2</button>
+                  </td>
+                  <td>
+                    <button type="button" value="3" class="btn btn-outline-info btn-block" onclick="exp('3')">3</button>
+                  </td>
+                  <td>
+                    <button type="button" value="+" class="btn btn-outline-danger btn-block" onclick="exp('+')">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <!-- <td>
+                    <button>%</button>
+                  </td> -->
+                  <td>
+                    <button type="button" value="." class="btn btn-outline-danger btn-block" onclick="exp('.')">.</button>
+                  </td>
+                  <td >
+                    <button type="button" value="0" class="btn btn-outline-info btn-block" onclick="exp('0')">0</button>
+                  </td>
+                  
+                  <td >
+                    <button type="button" value="=" class="btn btn-success btn-block" onclick="cal()">=</button>
+                  </td>
+                  <td >
+                    <button type="button"  class="btn btn-outline-warning btn-block" onclick="back()">⏮</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+              </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
